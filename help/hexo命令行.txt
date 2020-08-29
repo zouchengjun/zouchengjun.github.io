@@ -1,0 +1,139 @@
+git clone -b hexo https://github.com/zouchengjun/zouchengjun.github.io
+
+安装hexo
+npm install hexo-cli -g
+hexo init blog
+cd blog
+npm install
+hexo server
+
+安装next主题
+If you're using Hexo 5.0 or later, the simplest way to install is through npm:
+
+$ cd hexo-site
+$ npm install hexo-theme-next
+Or you can clone the entire repository:
+
+$ cd hexo-site
+$ git clone https://github.com/next-theme/hexo-theme-next themes/next
+
+安装搜索插件
+
+Install
+$ npm install hexo-generator-search --save
+Options
+You can configure this plugin in your root _config.yml.
+
+search:
+  path: search.xml
+  field: post
+  content: true
+path - file path. By default is search.xml . If the file extension is .json, the output format will be JSON. Otherwise XML format file will be exported.
+field - the search scope you want to search, you can chose:
+post (Default) - will only covers all the posts of your blog.
+page - will only covers all the pages of your blog.
+all - will covers all the posts and pages of your blog.
+content - whether contains the whole content of each article. If false, the generated results only cover title and other meta info without mainbody. By default is true.
+Exclude indexing
+To exclude a certain post or page from being indexed, you can simply insert indexing: false setting at the top of its front-matter, e.g.:
+
+title: "Code Highlight"
+date: "2014-03-15 20:17:16"
+tags: highlight
+categories: Demo
+description: "A collection of Hello World applications from helloworld.org."
+toc: true
+indexing: false
+---
+Then the generated result will not contain this post or page.
+
+安装计数插件
+$ npm install hexo-symbols-count-time
+You can set options of hexo-symbols-count-time in the Hexo's _config.yml (which locates in the root dir of your blog):
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: "mins."
+If symbols_count_time option is not specified, the default parameters will be used.
+
+Parameters
+awl – Average Word Length (chars count in word). Default: 4. You can check this here.
+CN ≈ 2
+EN ≈ 5
+RU ≈ 6
+wpm – Words Per Minute. Default: 275. You can check this here.
+Slow ≈ 200
+Normal ≈ 275
+Fast ≈ 350
+suffix – If time to read less then 60 minutes, added suffix as string parameter.
+If not defined, mins. will be used as default.
+exclude_codeblock – Allow to exclude all content inside code blocks for more accurate words counting.
+If not defined, false will be used as default.
+Note for Chinese users: because in Chinese language average word length about ~1.5 and if you at most cases write posts in Chinese (without mixed English), recommended to set awl to 2 and wpm to 300.
+But if you usualy mix your posts with English, awl to 4 and wpm to 275 will be nice.
+
+NexT theme
+This plugin integrated in ?NexT? and after plugin enabled in main Hexo config, you may adjust options in NexT config:
+
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+
+
+安装git插件
+npm install hexo-deployer-git --save
+
+正确写法：
+
+deploy:
+  type: git
+  repository: git@github.com:liuxianan/liuxianan.github.io.git
+  branch: master
+错误写法：
+
+deploy:
+  type: github
+  repository: https://github.com/liuxianan/liuxianan.github.io.git
+  branch: master
+
+
+hexo-generator-searchdb
+npm install hexo-generator-searchdb
+Options
+You can configure this plugin in your root _config.yml. All the arguments are optional.
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+path - file path. By default is search.xml. If the file extension is .json, the output format will be JSON. Otherwise XML format file will be exported.
+field - the search scope you want to search, you can chose:
+post (Default) - will only cover all the posts of your blog.
+page - will only cover all the pages of your blog.
+all - will cover all the posts and pages of your blog.
+content - whether contains the whole content of each article. If false, the generated results only cover title and other meta info without mainbody. By default is true.
+format - the form of the page contents, options are:
+html (Default) - original html string being minified.
+striptags - original html string being minified, and remove all the tags.
+raw - markdown text of each posts or pages.
+
+阅读全文
+<!-- more -->
+
+{% asset_path slug %}
+{% asset_img slug [title] %}
+{% asset_link slug [title] %}
+
+
+安装butterfly主题
+git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
+安装渲染
+npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive
