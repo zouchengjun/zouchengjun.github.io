@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>20160123 | 城南22号</title><meta name="description" content="今天难得扒了一碗饭，觉得清水煮出来的豆腐也会有那么一点醉人的鲜美。估计瘦了得5斤左右了，发现效果良好，可以继续保持。   下午的时候，爸爸要求拷贝电视剧，我依然窝在角落发呆，沉吟不语，爸爸吧只能默默走开，我觉得自己的情绪开始影响了周围的至亲，开始反省自己错误。 特地找了2011年的《running man》，发现自己依然可以笑到流泪，原来自己也不会因为伤心而改变太多。《原来》是辛夷坞最童话的一本书"><meta name="keywords" content="慢慢地走"><meta name="author" content="Zou Chengjun"><meta name="copyright" content="Zou Chengjun"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/uploads/meimg/logo.svg"><link rel="canonical" href="https://zouchengjun.com/2016/01/23/20160123/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="20160123"><meta property="og:url" content="https://zouchengjun.com/2016/01/23/20160123/"><meta property="og:site_name" content="城南22号"><meta property="og:description" content="今天难得扒了一碗饭，觉得清水煮出来的豆腐也会有那么一点醉人的鲜美。估计瘦了得5斤左右了，发现效果良好，可以继续保持。   下午的时候，爸爸要求拷贝电视剧，我依然窝在角落发呆，沉吟不语，爸爸吧只能默默走开，我觉得自己的情绪开始影响了周围的至亲，开始反省自己错误。 特地找了2011年的《running man》，发现自己依然可以笑到流泪，原来自己也不会因为伤心而改变太多。《原来》是辛夷坞最童话的一本书"><meta property="og:image" content="https://zouchengjun.com/uploads/meimg/avatar.gif"><meta property="article:published_time" content="2016-01-23T10:06:59.000Z"><meta property="article:modified_time" content="2016-01-23T10:06:59.000Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'true'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":50,"languages":{"author":"作者: Zou Chengjun","link":"链接: ","source":"来源: 城南22号","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2016-01-23 18:06:59'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="城南22号" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/uploads/meimg/avatar.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">25</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">3</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 细分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><i class="fa-fw fas fa-images"></i><span> 写诗的少年</span></a></li><li><a class="site-page" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><i class="fa-fw fas fa-images"></i><span> 慢慢地走</span></a></li><li><a class="site-page" href="/categories/%E6%B7%87%E5%A5%A5/"><i class="fa-fw fas fa-images"></i><span> 淇奥</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> RSS</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">城南22号</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 细分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><i class="fa-fw fas fa-images"></i><span> 写诗的少年</span></a></li><li><a class="site-page" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><i class="fa-fw fas fa-images"></i><span> 慢慢地走</span></a></li><li><a class="site-page" href="/categories/%E6%B7%87%E5%A5%A5/"><i class="fa-fw fas fa-images"></i><span> 淇奥</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> RSS</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">20160123</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2016-01-23T10:06:59.000Z" title="发表于 2016-01-23 18:06:59">2016-01-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2016-01-23T10:06:59.000Z" title="更新于 2016-01-23 18:06:59">2016-01-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">975</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>2分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>今天难得扒了一碗饭，觉得清水煮出来的豆腐也会有那么一点醉人的鲜美。<br>估计瘦了得5斤左右了，发现效果良好，可以继续保持。</p>
+<a id="more"></a>
+
+<p>下午的时候，爸爸要求拷贝电视剧，我依然窝在角落发呆，沉吟不语，爸爸吧只能默默走开，我觉得自己的情绪开始影响了周围的至亲，开始反省自己错误。</p>
+<p>特地找了2011年的《running man》，发现自己依然可以笑到流泪，原来自己也不会因为伤心而改变太多。<br>《原来》是辛夷坞最童话的一本书，有一句话我印象颇深，每天都会有人死，死于肿瘤，死于车祸，死于病毒，死于斗殴，却从来没有人死于悲伤…..</p>
+<p>记得《纸牌屋》里面，弗兰克教罗素自杀的时候，吃两片阿司匹林，泡在热水里面，用刀片切自己手腕的时候，要竖着切…..好吧，这些都是啰嗦的废话。<br>2007年的时候，花了几个月的饭钱买了个mp4，韩国爱国者牌子的，下了第一批电影，优酷上下载的flv格式的片子，那时候快播是内涵网站的病毒，电驴依然跑得动，打开百度搜个海贼王就是各种资源，输入谷歌网址依然可以打开，可是那时候的自己像什么样子呢，只会用智能ABC打字的懵懂小学生。<br>有一部电影《假如爱有天意》让人印象深刻，可惜糟瘟的网吧电脑，这个电影文件损坏，只看了一半，直到几年之后，我看完了这部电影，那时候正好被追求的女生拒绝了，那感动的是稀里哗啦的，再后来，一到伤心的时候，就会看这部电影，觉得孙艺珍太美，即便《外出》里更美吧，还是喜欢这部片子里面的，感情太美，这样的感情谈止于剧本，不见于现实，算是韩国电影对我影响最深的影片之一，昨天看了一遍，没有那般感动，原来，里面的那般美好自己或多或少有过类似的经历，曾经带着憧憬的我，单纯而容易被感动。<br>或许其他的东西更加吸引我，那就是人们对于缘分的解读。<br>我一向不相信缘分，我觉得感情是真实的东西，应该来自与相处和相互了解。<br>所谓“缘”者，好吧，我特地去百度了一下缘分的概念，得到狗狗的图片一张，不禁会心一笑，还没看文字，就心中明朗。<br>念念不忘，必有回响，那是曾经的我的座右铭，我曾相信爱情的意外，憧憬因为你的感动而喜极而泣。<br>好吧，我等到了答案，那就是人家过得好好的，和你没关系。<br>这是个美丽而悲伤的故事，就像电影里面的故事一样，包括演员在内，没人在意角色的感受。</p>
+<p>这是曾经的我。<br>我开始不相信缘分，我开始用更理性的思维去考虑，比如你为什么非要这样，不应该这样。<br>比如筷子吃牛排是不对的，为了15块钱争执不休，吵到天昏地暗的时候也鲜有道歉的自己。</p>
+<p>不过这次，我愿意去相信一次缘分，缘分有意外，也没有意外，会是感情的累积，也会是曾经的忏悔，也会是成长，也会是改变，因为当所有的不可预知的因素因为一个契机而汇聚的时候，便是缘分开始了。</p>
+<p>缘分不该开始于相遇，成长与相爱，结束于分离。<br>因为，它一直都在。</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Zou Chengjun</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zouchengjun.com/2016/01/23/20160123/">https://zouchengjun.com/2016/01/23/20160123/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章均禁止转载。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></div><div class="post_share"><div class="social-share" data-image="/uploads/meimg/avatar.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/uploads/meimg/wechatpay.png" target="_blank"><img class="post-qr-code-img" data-lazy-src="/uploads/meimg/wechatpay.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/uploads/meimg/alipay.png" target="_blank"><img class="post-qr-code-img" data-lazy-src="/uploads/meimg/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2016/01/26/20160126/"><img class="prev-cover" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">20160126</div></div></a></div><div class="next-post pull-right"><a href="/2016/01/21/20160121/"><img class="next-cover" data-lazy-src="/" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">20160121</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Zou Chengjun</div><div class="footer_custom_text">写自己。</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="/js/third-party/click_heart.js" async="async"></script></div></body></html>
