@@ -18,23 +18,23 @@ menu:
   标签: /tags/ || fas fa-tags
   关于: /about/ || fas fa-heart
   RSS: /atom.xml || fa fa-rss
-
-
-  #Home: / || fas fa-home
-  #Archives: /archives/ || fas fa-archive
-  #Tags: /tags/ || fas fa-tags
-  #Categories: /categories/ || fas fa-folder-open
+  # Home: / || fas fa-home
+  # Archives: /archives/ || fas fa-archive
+  # Tags: /tags/ || fas fa-tags
+  # Categories: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   - Music || /music/ || fas fa-music
   #   - Movie || /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
-  #About: /about/ || fas fa-heart
-  #RSS: /atom.xml || fa fa-rss
+  # About: /about/ || fas fa-heart
+
+# Hide the child menu items in mobile sidebar
+hide_sidebar_menu_child: false
 
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light # default / darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
@@ -52,11 +52,9 @@ copy:
 # formal:
 #   icon: link || the description
 social:
-  fab fa-github: https://github.com/zouchengjun || Github
+  # fab fa-github: https://github.com/xxxxx || Github
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
-  # GitHub: https://github.com/zouchengjun || fab fa-github
-  # E-Mail: mailto:zouchengjun@hotmail.com || fa fa-envelope
-  # Weibo: https://weibo.com/zouchengjun  || fab fa-weibo
+  fab fa-github: https://github.com/zouchengjun || Github
   fab fa-weibo: https://weibo.com/zouchengjun || Weibo
   fa fa-envelope: mailto:zouchengjun@hotmail.com || E-mail
 
@@ -79,8 +77,7 @@ local_search:
   enable: true
   labels:
     input_placeholder: Search for Posts
-    #hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
-    hits_empty: "我们没找到任何结果: ${query}" # if there are no result
+    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
 
 # Math (數學)
 # --------------------------------------
@@ -108,27 +105,25 @@ favicon: /uploads/meimg/logo.svg
 
 # Avatar (頭像)
 avatar:
-  img: /uploads/meimg/avatar.gif
+  img:  /uploads/meimg/avatar.gif
   effect: false
 
 # the banner image of home page
-# index_img: /uploads/cover/jingyu.jpg
 index_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # if the banner of page not setting, it will show the top_img
-# default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
 default_top_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # the banner image of archive page
-archive_img: https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
+archive_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # the banner image of tag page
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img: https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
+tag_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # the banner image of category page
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
+category_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
 # douban:
@@ -147,7 +142,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
+    - https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -208,15 +203,15 @@ reward:
   QR_code:
      - img: /uploads/meimg/wechatpay.png
     #   link:
-       text: wechat
+       text: 微信支付
      - img: /uploads/meimg/alipay.png
     #   link:
-       text: alipay
+       text: 支付宝
 
 # Related Articles
 related_post:
   enable: false
-  limit: 2 # Number of posts displayed
+  limit: 6 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
@@ -254,14 +249,7 @@ sharejs:
 # https://www.addtoany.com/
 addtoany:
   enable: false
-  item:
-    - facebook
-    - twitter
-    - wechat
-    - sina_weibo
-    - facebook_messenger
-    - email
-    - copy_link
+  item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
 # Comments System
 # --------------------------------------
@@ -408,13 +396,20 @@ footer:
 # --------------------------------------
 
 # Baidu Analytics
+# https://tongji.baidu.com/web/welcome/login
 baidu_analytics:
 
 # Google Analytics
+# https://analytics.google.com/analytics/web/
 google_analytics:
 
 # Tencent Analytics ID
+# https://mta.qq.com
 tencent_analytics:
+
+# CNZZ Analytics
+# https://www.umeng.com/
+cnzz_analytics:
 
 # Advertisement
 # --------------------------------------
@@ -550,14 +545,13 @@ click_heart: true
 ClickShowText:
   enable: false
   text:
-    - I
-    - LOVE
-    - YOU
+    # - I
+    # - LOVE
+    # - YOU
   fontSize: 15px
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-# display_mode: light
 display_mode: dark
 
 # Beautify (美化頁面顯示)
@@ -570,14 +564,16 @@ beautify:
 # Global font settings
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
+  global-font-size:
+  code-font-size:
   font-family:
-  code-font:
+  code-font-family:
 
 # Font settings for the site title and site subtitle
 # 左上角網站名字 主頁居中網站名字
-blog_title_font:
-  font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
-  font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif
+# blog_title_font:
+  # font_link: https://fonts.googleapis.com/css?family=Titillium+Web&display=swap
+  # font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif
 
 # The setting of divider icon (水平分隔線圖標設置)
 hr_icon:
@@ -645,7 +641,10 @@ aside:
     format: MMMM YYYY # eg: YYYY年MM月
     order: -1 # Sort of order. 1, asc for ascending; -1, desc for descending
     limit: 8 # if set 0 will show all
-  card_webinfo: true
+  card_webinfo:
+    enable: true
+    post_count: true
+    last_push_date: true
 
 # busuanzi count for PV / UV in site
 # 訪問人數
@@ -659,6 +658,25 @@ busuanzi:
 runtimeshow:
   enable: true
   publish_date: 2/1/2018 00:00:00 
+
+# Aside widget - Newest Comments
+newest_comments:
+  enable: false
+  limit: 6
+  avatar: true
+  leancloud:
+    enable: false
+    appId: # leancloud application app id
+    appKey: # leancloud application app key
+    serverURL: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+    default_avatar: # mp/identicon/monsterid/wavatar/retro/robohash/blank
+  github_issues:
+    enable: false
+    repo:
+  disqus:
+    enable: false
+    forum:
+    api_key:
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -733,7 +751,11 @@ note:
 # Pjax [Beta]
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
-pjax: false
+pjax:
+  enable: false
+  exclude:
+    # - xxxx
+    # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -775,7 +797,6 @@ lazyload:
 # pwa:
 #   enable: false
 #   manifest: /image/pwa/manifest.json
-#   theme_color: "#fff"
 #   apple_touch_icon: /image/pwa/apple-touch-icon.png
 #   favicon_32_32: /image/pwa/32.png
 #   favicon_16_16: /image/pwa/16.png
@@ -882,3 +903,8 @@ CDN:
   aplayer_css: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css
   aplayer_js: https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js
   meting_js: https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js
+
+  # Prism.js
+  prismjs_js: https://cdn.jsdelivr.net/npm/prismjs/prism.min.js
+  prismjs_lineNumber_js: https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js
+  prismjs_autoloader: https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js
