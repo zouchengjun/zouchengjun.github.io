@@ -1,0 +1,231 @@
+git clone -b hexo https://github.com/zouchengjun/zouchengjun.github.io
+
+安装hexo
+npm install hexo-cli -g
+hexo init blog
+cd blog
+npm install
+hexo server
+
+安装next主题
+If you're using Hexo 5.0 or later, the simplest way to install is through npm:
+
+$ cd hexo-site
+$ npm install hexo-theme-next
+Or you can clone the entire repository:
+
+$ cd hexo-site
+$ git clone https://github.com/next-theme/hexo-theme-next themes/next
+
+安装搜索插件
+
+Install
+$ npm install hexo-generator-search --save
+Options
+You can configure this plugin in your root _config.yml.
+
+search:
+  path: search.xml
+  field: post
+  content: true
+path - file path. By default is search.xml . If the file extension is .json, the output format will be JSON. Otherwise XML format file will be exported.
+field - the search scope you want to search, you can chose:
+post (Default) - will only covers all the posts of your blog.
+page - will only covers all the pages of your blog.
+all - will covers all the posts and pages of your blog.
+content - whether contains the whole content of each article. If false, the generated results only cover title and other meta info without mainbody. By default is true.
+Exclude indexing
+To exclude a certain post or page from being indexed, you can simply insert indexing: false setting at the top of its front-matter, e.g.:
+
+title: "Code Highlight"
+date: "2014-03-15 20:17:16"
+tags: highlight
+categories: Demo
+description: "A collection of Hello World applications from helloworld.org."
+toc: true
+indexing: false
+---
+Then the generated result will not contain this post or page.
+
+安装计数插件
+$ npm install hexo-symbols-count-time
+You can set options of hexo-symbols-count-time in the Hexo's _config.yml (which locates in the root dir of your blog):
+
+symbols_count_time:
+  symbols: true
+  time: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 4
+  wpm: 275
+  suffix: "mins."
+If symbols_count_time option is not specified, the default parameters will be used.
+
+Parameters
+awl – Average Word Length (chars count in word). Default: 4. You can check this here.
+CN ≈ 2
+EN ≈ 5
+RU ≈ 6
+wpm – Words Per Minute. Default: 275. You can check this here.
+Slow ≈ 200
+Normal ≈ 275
+Fast ≈ 350
+suffix – If time to read less then 60 minutes, added suffix as string parameter.
+If not defined, mins. will be used as default.
+exclude_codeblock – Allow to exclude all content inside code blocks for more accurate words counting.
+If not defined, false will be used as default.
+Note for Chinese users: because in Chinese language average word length about ~1.5 and if you at most cases write posts in Chinese (without mixed English), recommended to set awl to 2 and wpm to 300.
+But if you usualy mix your posts with English, awl to 4 and wpm to 275 will be nice.
+
+NexT theme
+This plugin integrated in ?NexT? and after plugin enabled in main Hexo config, you may adjust options in NexT config:
+
+symbols_count_time:
+  separated_meta: true
+  item_text_post: true
+  item_text_total: false
+
+
+安装git插件
+npm install hexo-deployer-git --save
+
+正确写法：
+
+deploy:
+  type: git
+  repository: git@github.com:liuxianan/liuxianan.github.io.git
+  branch: master
+错误写法：
+
+deploy:
+  type: github
+  repository: https://github.com/liuxianan/liuxianan.github.io.git
+  branch: master
+
+
+hexo-generator-searchdb
+Options
+You can configure this plugin in your root _config.yml. All the arguments are optional.
+
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+path - file path. By default is search.xml. If the file extension is .json, the output format will be JSON. Otherwise XML format file will be exported.
+field - the search scope you want to search, you can chose:
+post (Default) - will only cover all the posts of your blog.
+page - will only cover all the pages of your blog.
+all - will cover all the posts and pages of your blog.
+content - whether contains the whole content of each article. If false, the generated results only cover title and other meta info without mainbody. By default is true.
+format - the form of the page contents, options are:
+html (Default) - original html string being minified.
+striptags - original html string being minified, and remove all the tags.
+raw - markdown text of each posts or pages.
+
+hexo-generator-indexed
+$ npm install hexo-generator-indexed
+Options
+Add or modify the following section to your root _config.yml file
+
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  pagination_dir: page
+path: Root path for your blog's index page.
+default: ""
+per_page: Posts displayed per page.
+default: config.per_page as specified in the official Hexo docs (if present), otherwise 10
+0 disables pagination
+order_by: Posts order.
+default: date descending
+pagination_dir: URL format.
+default: 'page'
+awesome-page makes the URL ends with 'awesome-page/' for second page and beyond.
+Note
+If your theme define a non-archive index layout (e.g. About Me page), this plugin would follow that layout instead and not generate an archive. In that case, use hexo-generator-archive to generate an archive according to the archive layout.
+
+Feature & Usage
+置顶文章 Pinned article
+这一功能已被加入 hexo-generator-index。
+This feature is now part of hexo-generator-index.
+
+在文章的 Front-matter 中增加一个 sticky 参数用来置顶，其值应为大于0的整数，表示置顶的优先级（未指定则默认为 0）。数字越大，文章越靠前。
+Add a sticky parameter to the the post's Front-matter to make the post pinned at the top of home page.
+
+---
+title: example
+sticky: 100
+---
+采用 sticky 关键词是因为这个在 NexT 主题中已经定义了置顶样式，因此可以直接拿来使用。
+
+隐藏文章 Hide article
+在文章的 Front-matter 中增加一个 hide 参数用来隐藏。
+Add a hide parameter to the the post's Front-matter to hide the post from home page.
+
+---
+title: example
+hide: true
+---
+隐藏特定分类中的文章 Hide articles in specified categories
+在 Hexo 的 _config.yml 中可以通过 hide_categories 选项设置隐藏某个分类下的文章，例如：
+You can hide articles in specified categories by setting hide_categories in hexo _config.yml, e.g.
+
+hide_categories:
+  - categorie1
+  - categorie2
+
+配置SSH key
+为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。
+
+$ cd ~/. ssh #检查本机已存在的ssh密钥
+如果提示：No such file or directory 说明你是第一次使用git。
+
+ssh-keygen -t rsa -C "邮件地址"
+然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到.ssh\id_rsa.pub文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -> SSH and GPG keys -> New SSH key：
+
+测试是否成功
+$ ssh -T git@github.com # 注意邮箱地址不用改
+如果提示Are you sure you want to continue connecting (yes/no)?，输入yes，然后会看到：
+
+Hi liuxianan! You've successfully authenticated, but GitHub does not provide shell access.
+
+看到这个信息说明SSH已配置成功！
+
+此时你还需要配置：
+
+$ git config --global user.name "liuxianan"// 你的github用户名，非昵称
+$ git config --global user.email  "xxx@qq.com"// 填写你的github注册邮箱
+具体这个配置是干嘛的我没仔细深究。
+
+git 无法添加文件夹下文件
+最近做项目时，发现无法提交某个子文件夹下的文件。
+
+google后发现可能是该子文件夹下有.git文件夹导致无法上传。
+
+删除子文件夹下.git后，依然无法提交子文件夹下的文件。
+
+继续google，
+
+尝试以下方法：
+
+ git rm --cached directory
+ git add directory
+注：directory为子文件夹的路径。
+但是执行git rm --cached directory时，提示
+
+fatal: Unable to create 'xx/.git/index.lock': File exists.
+执行rm -f xx/.git/index.lock后解决
+
+
+
+
+阅读全文
+<!-- more -->
+
+{% asset_path slug %}
+{% asset_img slug [title] %}
+{% asset_link slug [title] %}
+
