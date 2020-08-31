@@ -7,15 +7,29 @@
 #   name || link || icon
 
 menu:
-  # Home: / || fas fa-home
-  # Archives: /archives/ || fas fa-archive
-  # Tags: /tags/ || fas fa-tags
-  # Categories: /categories/ || fas fa-folder-open
+  首页: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  细分类||fas fa-folder-open:
+    - 写诗的少年 || /categories/写诗的少年/ || fas fa-images
+    - 慢慢地走 || /categories/慢慢地走/ || fas fa-images
+    - 淇奥 || /categories/淇奥/ || fas fa-images
+  #友情链接: /link/ || fas fa-link
+  标签: /tags/ || fas fa-tags
+  关于: /about/ || fas fa-heart
+  RSS: /atom.xml || fa fa-rss
+
+
+  #Home: / || fas fa-home
+  #Archives: /archives/ || fas fa-archive
+  #Tags: /tags/ || fas fa-tags
+  #Categories: /categories/ || fas fa-folder-open
   # List||fas fa-list:
   #   - Music || /music/ || fas fa-music
   #   - Movie || /movies/ || fas fa-video
   # Link: /link/ || fas fa-link
-  # About: /about/ || fas fa-heart
+  #About: /about/ || fas fa-heart
+  #RSS: /atom.xml || fa fa-rss
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -31,15 +45,20 @@ code_word_wrap: false
 copy:
   enable: true
   copyright:
-    enable: false
+    enable: true
     limit_count: 50
 
 # social settings (社交圖標設置)
 # formal:
 #   icon: link || the description
 social:
-  # fab fa-github: https://github.com/xxxxx || Github
+  fab fa-github: https://github.com/zouchengjun || Github
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email
+  # GitHub: https://github.com/zouchengjun || fab fa-github
+  # E-Mail: mailto:zouchengjun@hotmail.com || fa fa-envelope
+  # Weibo: https://weibo.com/zouchengjun  || fab fa-weibo
+  fab fa-weibo: https://weibo.com/zouchengjun || Weibo
+  fa fa-envelope: mailto:zouchengjun@hotmail.com || E-mail
 
 # search (搜索)
 # --------------------------------------
@@ -57,10 +76,11 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   labels:
     input_placeholder: Search for Posts
-    hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    #hits_empty: "We didn't find any results for the search: ${query}" # if there are no result
+    hits_empty: "我们没找到任何结果: ${query}" # if there are no result
 
 # Math (數學)
 # --------------------------------------
@@ -84,29 +104,31 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /img/favicon.png
+favicon: /uploads/meimg/logo.svg
 
 # Avatar (頭像)
 avatar:
-  img: /img/avatar.png
+  img: /uploads/meimg/avatar.gif
   effect: false
 
 # the banner image of home page
-index_img:
+# index_img: /uploads/cover/jingyu.jpg
+index_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # if the banner of page not setting, it will show the top_img
-default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+# default_top_img: https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg
+default_top_img: https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg
 
 # the banner image of archive page
-archive_img:
+archive_img: https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
 
 # the banner image of tag page
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
 
 # the banner image of category page
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img:
+category_img: https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
 
 # If you are using hexo-douban, you can configure it (如果你有使用 hexo-douban,可配置這個)
 # douban:
@@ -125,7 +147,7 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -152,7 +174,7 @@ post_meta:
 
 # wordcount (字數統計)
 wordcount:
-  enable: false
+  enable: true
   post_wordcount: true
   min2read: true
   total_wordcount: true
@@ -176,29 +198,29 @@ toc:
 
 post_copyright:
   enable: true
-  decode: false
+  decode: true
   license: CC BY-NC-SA 4.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
 reward:
-  enable: false
+  enable: true
   QR_code:
-    # - img: /img/wechat.jpg
+     - img: /uploads/meimg/wechatpay.png
     #   link:
-    #   text: wechat
-    # - img: /img/alipay.jpg
+       text: wechat
+     - img: /uploads/meimg/alipay.png
     #   link:
-    #   text: alipay
+       text: alipay
 
 # Related Articles
 related_post:
-  enable: true
-  limit: 6 # Number of posts displayed
+  enable: false
+  limit: 2 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # anchor
 # when you scroll in post, the URL will update according to header id.
@@ -286,7 +308,7 @@ gitalk:
   repo:
   owner:
   admin:
-  language: en # en, zh-CN, zh-TW, es-ES, fr, ru
+  language: zh_CN # en, zh-CN, zh-TW, es-ES, fr, ru
   perPage: 10 # Pagination size, with maximum 100.
   distractionFreeMode: false # Facebook-like distraction free mode.
   pagerDirection: last # Comment sorting direction, available values are last and first.
@@ -326,7 +348,7 @@ facebook_comments:
   user_id: # optional
   pageSize: 10 # The number of comments to show
   order_by: social # social/time/reverse_time
-  lang: en_US # Language en_US/zh_CN/zh_TW and so on
+  lang: zh_CN # Language en_US/zh_CN/zh_TW and so on
 
 # Chat Services
 # --------------------------------------
@@ -374,8 +396,8 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: 
-  copyright: true # Copyright of theme and framework
+  custom_text: 写自己。
+  copyright: false # Copyright of theme and framework
   ICP: # Chinese ICP License
     enable: false
     url:
@@ -522,7 +544,7 @@ fireworks:
   zIndex: 9999 # -1 or 9999
 
 # Mouse click effects: Heart symbol (鼠標點擊效果: 愛心)
-click_heart: false
+click_heart: true
 
 # Mouse click effects: words (鼠標點擊效果: 文字)
 ClickShowText:
@@ -535,11 +557,12 @@ ClickShowText:
 
 # Default display mode (網站默認的顯示模式)
 # light (default) / dark
-display_mode: light
+# display_mode: light
+display_mode: dark
 
 # Beautify (美化頁面顯示)
 beautify:
-  enable: false
+  enable: true
   field: post # site/post
   title-prefix-icon: '\f0c1'
   title-prefix-icon-color: '#F47466'
@@ -564,7 +587,7 @@ hr_icon:
 
 # the subtitle on homepage (主頁subtitle)
 subtitle:
-  enable: false
+  enable: true
   # Typewriter Effect (打字效果)
   effect: true
   # loop (循環打字)
@@ -582,6 +605,7 @@ subtitle:
   # 開頭不允許轉義字元，如需要，請把整個句子用雙引號包住
   # 如果關閉打字效果，subtitle只會顯示sub的第一行文字
   sub:
+    - Just write yourself.
 
 # Loading Animation (加載動畫)
 preloader: false
@@ -592,17 +616,17 @@ preloader: false
 aside:
   enable: true
   mobile: true # display on mobile
-  position: right # left or right
+  position: left # left or right
   card_author:
     enable: true
     description:
     button:
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/zouchengjun
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 邹成军的博客，重新开张。
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
@@ -614,7 +638,7 @@ aside:
   card_tags:
     enable: true
     limit: 40 # if set 0 will show all
-    color: false
+    color: true
   card_archives:
     enable: true
     type: monthly # yearly or monthly
@@ -626,15 +650,15 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date:
+  enable: true
+  publish_date: 2/1/2018 00:00:00 
 
 # Bottom right button (右下角按鈕)
 # --------------------------------------
@@ -665,7 +689,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 2
 
 # Lightbox (圖片大圖查看模式)
 # --------------------------------------
@@ -721,8 +745,8 @@ aplayerInject:
 # position 彈窗位置
 # 可選 top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  enable: false
-  position: bottom-left
+  enable: true
+  position: top-right
   bg_light: '#49b1f5' # The background color of Toast Notification in light mode
   bg_dark: '#121212' # The background color of Toast Notification in dark mode
 
