@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>20160126 | 城南22号</title><meta name="description" content="本来说好2月29号的，结果就那样烟消云散，我满怀期待，却又铩羽而归。 就再啰嗦一篇吧。   亲口说出来的答案也许是最有力的答案了，我也想知道原因，也许我明白了，也许未必明白。我就像那个跳进稻田的孩子，总想着摘那最好的一穗，最后总是抛弃那些在手中的，几千年前人想明白的事情，我却想不明白。  ————————————２月１３日１８：４５　陈孝正当他还是那个除了骄傲一无所有的少年时，曾在无数次的梦中幻想"><meta name="keywords" content="慢慢地走"><meta name="author" content="Zou Chengjun"><meta name="copyright" content="Zou Chengjun"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/uploads/meimg/logo.svg"><link rel="canonical" href="https://zouchengjun.com/2016/01/26/20160126/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="article"><meta property="og:title" content="20160126"><meta property="og:url" content="https://zouchengjun.com/2016/01/26/20160126/"><meta property="og:site_name" content="城南22号"><meta property="og:description" content="本来说好2月29号的，结果就那样烟消云散，我满怀期待，却又铩羽而归。 就再啰嗦一篇吧。   亲口说出来的答案也许是最有力的答案了，我也想知道原因，也许我明白了，也许未必明白。我就像那个跳进稻田的孩子，总想着摘那最好的一穗，最后总是抛弃那些在手中的，几千年前人想明白的事情，我却想不明白。  ————————————２月１３日１８：４５　陈孝正当他还是那个除了骄傲一无所有的少年时，曾在无数次的梦中幻想"><meta property="og:image" content="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg"><meta property="article:published_time" content="2016-01-26T00:45:18.000Z"><meta property="article:modified_time" content="2016-01-26T00:45:18.000Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '2'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":50,"languages":{"author":"作者: Zou Chengjun","link":"链接: ","source":"来源: 城南22号","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2016-01-26 08:45:18'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="城南22号" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/uploads/meimg/avatar.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">25</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">3</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 细分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><i class="fa-fw fas fa-images"></i><span> 写诗的少年</span></a></li><li><a class="site-page" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><i class="fa-fw fas fa-images"></i><span> 慢慢地走</span></a></li><li><a class="site-page" href="/categories/%E6%B7%87%E5%A5%A5/"><i class="fa-fw fas fa-images"></i><span> 淇奥</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> RSS</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">城南22号</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 细分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><i class="fa-fw fas fa-images"></i><span> 写诗的少年</span></a></li><li><a class="site-page" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><i class="fa-fw fas fa-images"></i><span> 慢慢地走</span></a></li><li><a class="site-page" href="/categories/%E6%B7%87%E5%A5%A5/"><i class="fa-fw fas fa-images"></i><span> 淇奥</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> RSS</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">20160126</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2016-01-26T00:45:18.000Z" title="发表于 2016-01-26 08:45:18">2016-01-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2016-01-26T00:45:18.000Z" title="更新于 2016-01-26 08:45:18">2016-01-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>3分钟</span></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><p>本来说好2月29号的，结果就那样烟消云散，我满怀期待，却又铩羽而归。</p>
+<p>就再啰嗦一篇吧。</p>
+<a id="more"></a>
+
+<p>亲口说出来的答案也许是最有力的答案了，我也想知道原因，也许我明白了，也许未必明白。<br>我就像那个跳进稻田的孩子，总想着摘那最好的一穗，最后总是抛弃那些在手中的，几千年前人想明白的事情，我却想不明白。</p>
+<blockquote>
+<p>————————————<br>２月１３日１８：４５　陈孝正</br><br>当他还是那个除了骄傲一无所有的少年时，曾在无数次的梦中幻想过这一刻。象牙色光面软缎最衬她白皙皎洁的肌肤，及膝小礼服的款式让她一张娃娃脸灵动无比；她左边耳垂上有一颗小痔，她曾说，阿正，如果有一天我们走散了，再见的时候我老得白发苍苍，记得这颗痔，你总能认出我。现在，彼此容颜未改，他站在一米开外，只看得见她脸侧摇曳的珍珠耳坠。她的那双手还是那样美好无暇，他曾梦想过自己有一天可以紧握着它，踩着红毯，微笑地站在贺喜的人前……<br>没错，他知道这些都只能在梦中，就连当初还拥有着郑微的陈孝正，在清醒的时候也没有奢求过这一幕真实的降临，因为太过美好，他不敢伸出手，怕自己抓不牢。<br>连他自己都不相信自己可以拥有，所以注定得不到。<br>她和她的丈夫肩并着肩，男在左，女在右，一对璧人。<br>他对自己说，陈孝正，你可以不来，但既然来了，就知道该怎么办。所以他扬起嘴角走到他们跟前，一句恭喜，应该说得无懈可击。<br>郑微手里还握着一只精巧的打火机，接过他的红包，顺手放在伴娘的托盘上，笑着对他说，“谢谢，我给你点支烟吧。”<br>他从不抽烟，她比谁都清楚，可是他还是从托盘里拈起一支，极不熟练地叼在嘴里，顺着她的手势微微欠身，１９９２年的防风Zipo，在她手里好几次都打不着火，他不知道轻抖的是她还是自己。<br>有一刹那，陈孝正以为时间可以这样恒久地静止，然而，下一刻，另一只手轻轻覆在了郑微的手背上，指节修长，稳定而有力，在这只手的配合下，一切恢复如常。火苗窜起，陈孝正心里的最后那一点光便灭了。陈孝正差点忘了，她身边的这个男人，有一双比他更有力量的手，这双手可以温柔地抚在心爱女人的手背，也可以翻手为云覆手为雨。<br>他对新上任不久的城区检察院一把手含笑点头，“林检察长，祝您夫妻俩白头到老，地久天长。”<br>对方亦对他报以微笑， “多谢，陈副经理应该好事也近了。”<br>这个男人的语调永远是温和而矜持的，陈孝正不会忘记，当自己在某个午夜，看着这个男人怀抱着猫一步步走下她家的楼梯，然后笑着说：“听说陈助理的任命就要下来了，贵公司欧阳总经理对你厚望有加，你是聪明人，这个时候，为谁风露立中宵？”那个时候，陈孝正就知道自己手上已经没有了筹码。<br>或许他停留得太久，身后等待着跟新郎新娘打招呼的客人已面露不耐，他再一次看向娇俏的新娘，那些年，在那些年里他们几乎以为对方就是自己的整个世界，然而现在，他和那一个个手拿红包，面目模糊的来客有何不同？<br>“这位客人，请先入席吧。”伴娘打扮的朱小北对他这样说道。他欠身从他们身边走过，将朱小北眼里的一闪而过的鄙薄抛在身后。<br>他只有一杯清水，原已觉得足够，然而偏偏让他一度尝到从未奢望过的甜，这才觉察出后来的寡淡。今后这半生，他或许再也觅不到那样的滋味，没关系，水还是水，他已失却味觉。<br></br>————————————</p>
+</blockquote>
+<p>引以此文，以致最后。</p>
+<p>也许在很长一段时间里面自己未必过得很好，但是现在只能自己走下去。</p>
+<p>过了这一刻，都是往事。</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Zou Chengjun</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zouchengjun.com/2016/01/26/20160126/">https://zouchengjun.com/2016/01/26/20160126/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章均禁止转载。</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></div><div class="post_share"><div class="social-share" data-image="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/uploads/meimg/wechatpay.png" target="_blank"><img class="post-qr-code-img" data-lazy-src="/uploads/meimg/wechatpay.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/uploads/meimg/alipay.png" target="_blank"><img class="post-qr-code-img" data-lazy-src="/uploads/meimg/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2016/01/26/%E6%B7%87%E5%A5%A5%E4%B9%8B59/"><img class="prev-cover" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">淇奥之59</div></div></a></div><div class="next-post pull-right"><a href="/2016/01/23/20160123/"><img class="next-cover" data-lazy-src="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">20160123</div></div></a></div></nav></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Zou Chengjun</div><div class="footer_custom_text">写自己。</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script src="/js/third-party/click_heart.js" async="async"></script></div></body></html>

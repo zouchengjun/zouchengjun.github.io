@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>城南22号 - No.22 Road of South-city</title><meta name="description" content="城南路22号，我的心情小站。"><meta name="author" content="Zou Chengjun"><meta name="copyright" content="Zou Chengjun"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/uploads/meimg/logo.svg"><link rel="canonical" href="https://zouchengjun.com/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><meta property="og:type" content="website"><meta property="og:title" content="城南22号"><meta property="og:url" content="https://zouchengjun.com/"><meta property="og:site_name" content="城南22号"><meta property="og:description" content="城南路22号，我的心情小站。"><meta property="og:image" content="https://zouchengjun.com/uploads/meimg/avatar.gif"><meta property="article:published_time" content="2020-08-31T02:36:36.159Z"><meta property="article:modified_time" content="2020-08-31T02:36:36.159Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '2'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  hexoversion: '5.1.1',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"limitCount":50,"languages":{"author":"作者: Zou Chengjun","link":"链接: ","source":"来源: 城南22号","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"top-right"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false,
+  postUpdate: '2020-08-31 10:36:36'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 5.1.1"><link rel="alternate" href="/atom.xml" title="城南22号" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" data-lazy-src="/uploads/meimg/avatar.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">25</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">3</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 细分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><i class="fa-fw fas fa-images"></i><span> 写诗的少年</span></a></li><li><a class="site-page" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><i class="fa-fw fas fa-images"></i><span> 慢慢地走</span></a></li><li><a class="site-page" href="/categories/%E6%B7%87%E5%A5%A5/"><i class="fa-fw fas fa-images"></i><span> 淇奥</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> RSS</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://cn.bing.com/th?id=OHR.FrederickSound_ZH-CN1838908749_1920x1080.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">城南22号</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 细分类</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><i class="fa-fw fas fa-images"></i><span> 写诗的少年</span></a></li><li><a class="site-page" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><i class="fa-fw fas fa-images"></i><span> 慢慢地走</span></a></li><li><a class="site-page" href="/categories/%E6%B7%87%E5%A5%A5/"><i class="fa-fw fas fa-images"></i><span> 淇奥</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> RSS</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">城南22号</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/zouchengjun" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://weibo.com/zouchengjun" target="_blank" title="Weibo"><i class="fab fa-weibo"></i></a><a class="social-icon" href="mailto:zouchengjun@hotmail.com" target="_blank" title="E-mail"><i class="fa fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/08/31/%E4%BF%AE%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%97%A5%E5%AD%90/" title="修博客的日子">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="修博客的日子"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/08/31/%E4%BF%AE%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%97%A5%E5%AD%90/" title="修博客的日子">修博客的日子</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-08-31T02:29:08.050Z" title="发表于 2020-08-31 10:29:08">2020-08-31</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">修博客的日子，总是让人开始怀念过去。
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/03/06/%E8%80%8C%E7%AB%8B/" title="而立">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="而立"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/03/06/%E8%80%8C%E7%AB%8B/" title="而立">而立</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2020-03-06T13:33:09.000Z" title="发表于 2020-03-06 21:33:09">2020-03-06</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">
+30岁人应该能依靠自己的本领独立承担自己应承受的责任,并已经确定自己的人生目标与发展方向。
+
+又是花了一点时间来把这个博客的代码维护了一下。
+
+越来越不喜欢写东西，应该是懒惰了，还是已经不那么热衷把自己心中想着的那些事情写出来，告诉所有人。这是内敛，稳重，还是失去棱角，或者说生活让人感觉乏味或者无趣。越来越喜欢用理性的思考方式，更加准确的用词，以至于用所谓更加正确的价值观去看待所有的事情。然后，未知觉间，而立之年。
+可能越老越会去回忆。当30岁的时候，就回去回忆20岁的时候，会想到许多自己年少轻狂的样子，像极了现在经常不屑的年轻群友。终于变成了以前自己最烦的人。每个年纪可能都会有自己认为正确的事情。  
+我想起了那些年走过的马路，两边的树儿长得更大了，树叶也更加茂密乐乐，那些路上的人换了一批又一批，时光也顺着这个方向流动，像极了一个昨天的梦。车流滚滚，盛夏的太阳耀眼无比，金鹰那边的湖面散着太多太多的光芒….  
+前几天旧的硬盘找了出来，看到了许多旧的文件，那些偶然顺手存下的，还有熬夜做出来的文档，还有随手拍下的照片….  
+有太多太多的东西。再也不见，也再也不会有。  
+想写很多话， ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2019/08/15/%E6%88%91%E8%A7%89%E5%BE%97%E6%9C%89%E7%82%B9%E7%B4%AF/" title="我觉得有点累">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我觉得有点累"></a></div><div class="recent-post-info"><a class="article-title" href="/2019/08/15/%E6%88%91%E8%A7%89%E5%BE%97%E6%9C%89%E7%82%B9%E7%B4%AF/" title="我觉得有点累">我觉得有点累</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2019-08-15T02:34:00.000Z" title="发表于 2019-08-15 10:34:00">2019-08-15</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">
+那些无聊的事情，却是我最怀念的。—《飞屋环游记》
+
+
+
+
+身累。心累。好像一切都变得很累很累。
+
+看到所有的蓝色，所有的彩色，都变得难以置信的惊艳。我想看到所有曾经的色彩却好像都在那些无聊的事情中慢慢流转那些无聊的事情也开始变得让人怀念怀念那些色彩五彩斑斓
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2017/03/10/3-7/" title="3.7">     <img class="post_bg" data-lazy-src="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3.7"></a></div><div class="recent-post-info"><a class="article-title" href="/2017/03/10/3-7/" title="3.7">3.7</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2017-03-10T11:39:33.000Z" title="发表于 2017-03-10 19:39:33">2017-03-10</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">忽然想写点东西了生日那个叫莫名其妙的给过去了感觉什么感觉都没有每个人都有想重新来过的时候我想起了曾经搞的blog就像一开始说的我想写点东西
+
+研究github的时候顺手研究了一下hexo搞了半天新blog就这样起来了
+我也想用markdown优雅的写blog幸而曾经研究了下语法这该叫优雅的写blog吧
+3-7还有梦想我想我还会有梦想我想那会像我18岁的时候那样还会有那点无知的骄傲
+不忘曾经有很多美好一点也不想去忘记有改变的又似是而非的有转为憎恨的我想，这些我都不会去忘记
+不问化为曾经的云不问曾经的迷茫我不怕自己活得那样清醒信任所有我自己曾经相信的
+不弃还有很多的追逐和曾经一样好像没有停止过追到的也没有那么多却一点也不想停下来
+不老这一年一年过得好快从曾经期待明天变成留恋昨天却一点也不想说自己老了只称之为成长
+化·极我想说我一直和以前一样从来没有变过所有的重新来过都叫明天会更好
+2017年3月7日2017年3月8日之后我，27岁。
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2016/05/12/%E8%B7%AF%E4%BA%BA/" title="路人">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="路人"></a></div><div class="recent-post-info"><a class="article-title" href="/2016/05/12/%E8%B7%AF%E4%BA%BA/" title="路人">路人</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-05-12T08:27:00.000Z" title="发表于 2016-05-12 16:27:00">2016-05-12</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/">写诗的少年</a></span></div><div class="content">路人城南22号
+那一天你找到了太阳但我没有找到月亮
+
+有个漫长的夏天恼人的蝉鸣声和沉闷的空调主机的吹风声该死的手机也没有信号你看着我笑了我忽然也笑了出来
+我的宿命分为两段，遇见你的时候，和离开你的时候我再次获得了自由，也重新学会了忧郁喧嚣与痛苦的刹那我似乎用尽了所有的热，而后止于遥远
+可一想到终将是你的路人星星与云都散了落下一场雨雨点虽小却将那种冷滴入灵魂
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2016/03/14/20160314/" title="20160314">     <img class="post_bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="20160314"></a></div><div class="recent-post-info"><a class="article-title" href="/2016/03/14/20160314/" title="20160314">20160314</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-03-14T08:02:20.000Z" title="发表于 2016-03-14 16:02:20">2016-03-14</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">昨天很想听一首歌，光良的《第一次》，很老的一首歌，忽然发现QQ音乐没有了，想要下个flac自己压缩的，发现始终不能满意，最后去阿里买了一首，其实只是想再听一遍歌词而已。
+仅仅是因为忽然的兴起，听的时候，竟然没有那般的回忆。也没有那么多的第一次去回忆。
+来日已经开始方长。
+
+
+我，这么多年过去了，其实变了只是那么一点冷漠，还有那点宽容。我依然倔强，我依然喜欢那样的女孩，泼辣的，气场足，呆萌蠢的，昨天偶然遇到的一个姑娘，依然会去心动，和五年前一样，七年前一样，还有三年前一样。
+也许这就是生命，和和水一样，方向永远只是一个，顺流而下，未必是困难的事情。
+依然还是那样的我，依然是相信彼此的感情，依然希望彼此留有私有的空间，依然愿意去选择无视一些荒唐的事情，依然只想着那些温暖的故事，停滞，不前，默念1000遍，然后鼓起勇气去做那样一次决定。
+昨天想了很多，聊了很多，也许听了很多的话，各种人说的，和人聊天的时候，有些人回避，我的人愤愤不平，有的人安慰自己，有的人教训我，有那么一段时间，我觉得自己是混蛋，有那么一段时间，我觉得是这个世界不公平，也有一段时间，我觉得是你做的太恶心。
+罢了。
+当我静下心 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2016/02/26/20160226/" title="20160226">     <img class="post_bg" data-lazy-src="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="20160226"></a></div><div class="recent-post-info"><a class="article-title" href="/2016/02/26/20160226/" title="20160226">20160226</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-02-26T01:57:25.000Z" title="发表于 2016-02-26 09:57:25">2016-02-26</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">有一个人被大家深深佩服和敬仰，那就是逻辑学家金岳霖。那个爱了林微因一生的男人。那个时代，被称为大师的时代，鲁迅的糟糠之妻，徐志摩的风流往事，都被人津津乐道。当然包括金岳霖的故事。金岳霖是神奇的，我只想用这个词，因为我觉得这种爱情太让人哀伤了，三个人住在一个院子的感受，我想到就像发疯，林微因不忤，梁思成反思…..
+
+
+这个三人组太神奇，把爱情当做友情来使，直到后来很久之后，金岳霖举杯说：今天是林微因的生日。“，彼时，梁思成已经和他学生林洙结婚。我才觉得，这个人很不错，让人感动。
+爱，也许会彼此伤害，会相互憎恨，但是有那么一些东西会永远留在心中，铭记那些你认为宝贵的东西就好，毕竟两个人的时光中，有一半是属于你自己的。
+你过的那么痛苦，人家过的日子充满激情，还会告诉你，过去的一切不过是一场毫无意义的时光，让人发狂，但是，当再一次听到你的声音，我再一次失去了所有的装备，垂下双手，说，是的，我还是爱你的，一直都是。爱了，就不要去欺骗自己，因为有些东西，存在过，一直存在过，为什么说出来就没有勇气呢。我怀念的是我自己的那一份，虽然已经残破不堪，毫无价值，但是那还是我一生的至宝。我一直相信的是那种不需 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2016/02/22/20160222/" title="20160222">     <img class="post_bg" data-lazy-src="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="20160222"></a></div><div class="recent-post-info"><a class="article-title" href="/2016/02/22/20160222/" title="20160222">20160222</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2016-02-22T06:18:23.000Z" title="发表于 2016-02-22 14:18:23">2016-02-22</time></span><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/">慢慢地走</a></span></div><div class="content">昨天偶然发现《前度》依然躺在硬盘里，大晚上补完了广告的草稿，晚上2点多又看了一遍，就像那杯水一样，我的心也开始流逝，伤横累累，终于被透支了干净。我想我是一个啰嗦的人。
+
+我不是一个愿意放弃的人，即便到今天，高中爱过的人依然不愿去面对，我真心爱过的，握着右手从小拇指开始掰着数，也就数到了中指。2016年1月2日打麻将，也就5块一把，2小时就赢了200多，清一色自摸，后来算一下，结果那天麻将用光了我所有的运气。回味电影的时候，有太多相似的场景，无休止的吵架，把分手挂在嘴上。也许这是一种的相处的方式，可惜它是属于我的，也只属于我。电影里出现了那个塑料的杯子的时候，我们都会感慨，男人终究为女人做了改变，但却是唯一的一个改变，还是她教他这样做的。他与她不知道闹了多少回分手，互不相让，蛮不讲理。而他与他的现任的分手仅仅是“算了吧”….
+我想起了那次倾盆大雨在茂业的时候，我只是转身回去，很生气，但是走出两步我就后悔了，但是不知道什么原因我会继续向前走，不断走，当走的足够远的时候，我才回头，却发现这次你没有追过来，也没有上次那样举起双手捶过来，只说了那句我依然记得的“为什么不回头？”….我不知道。真的 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" data-lazy-src="/uploads/meimg/avatar.gif" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Zou Chengjun</div><div class="author-info__description">城南路22号，我的心情小站。</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">25</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories"><div class="headline">分类</div><div class="length_num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zouchengjun"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zouchengjun" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="https://weibo.com/zouchengjun" target="_blank" title="Weibo"><i class="fab fa-weibo"></i></a><a class="social-icon" href="mailto:zouchengjun@hotmail.com" target="_blank" title="E-mail"><i class="fa fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">邹成军的博客，重新开张。</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/08/31/%E4%BF%AE%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%97%A5%E5%AD%90/" title="修博客的日子"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="修博客的日子"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/08/31/%E4%BF%AE%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%97%A5%E5%AD%90/" title="修博客的日子">修博客的日子</a><time class="aside-post_meta post-meta-date" datetime="2020-08-31T02:29:08.050Z" title="发表于 2020-08-31 10:29:08">2020-08-31</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/08/30/hello-world/" title="Hello World"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/08/30/hello-world/" title="Hello World">Hello World</a><time class="aside-post_meta post-meta-date" datetime="2020-08-29T17:30:00.000Z" title="发表于 2020-08-30 01:30:00">2020-08-30</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2020/03/06/%E8%80%8C%E7%AB%8B/" title="而立"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="而立"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2020/03/06/%E8%80%8C%E7%AB%8B/" title="而立">而立</a><time class="aside-post_meta post-meta-date" datetime="2020-03-06T13:33:09.000Z" title="发表于 2020-03-06 21:33:09">2020-03-06</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2019/08/15/%E6%88%91%E8%A7%89%E5%BE%97%E6%9C%89%E7%82%B9%E7%B4%AF/" title="我觉得有点累"><img class="aside-post-bg" data-lazy-src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我觉得有点累"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2019/08/15/%E6%88%91%E8%A7%89%E5%BE%97%E6%9C%89%E7%82%B9%E7%B4%AF/" title="我觉得有点累">我觉得有点累</a><time class="aside-post_meta post-meta-date" datetime="2019-08-15T02:34:00.000Z" title="发表于 2019-08-15 10:34:00">2019-08-15</time></div></div><div class="aside-recent-post"><a class="aside-post-cover" href="/2017/03/10/3-7/" title="3.7"><img class="aside-post-bg" data-lazy-src="https://cn.bing.com/th?id=OHR.AugustStargazing_ZH-CN9929724138_1920x1080.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="3.7"/></a><div class="aside-post-info"><a class="aside-post-title" href="/2017/03/10/3-7/" title="3.7">3.7</a><time class="aside-post_meta post-meta-date" datetime="2017-03-10T11:39:33.000Z" title="发表于 2017-03-10 19:39:33">2017-03-10</time></div></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/"><span class="card-category-list-name">写诗的少年</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/"><span class="card-category-list-name">慢慢地走</span><span class="card-category-list-count">20</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B7%87%E5%A5%A5/"><span class="card-category-list-name">淇奥</span><span class="card-category-list-count">1</span></a></li>
+                       
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href='/tags/%E5%86%99%E8%AF%97%E7%9A%84%E5%B0%91%E5%B9%B4/' style='font-size:19px; color:rgb(59, 31, 53)'>写诗的少年</a><a href='/tags/%E6%85%A2%E6%85%A2%E5%9C%B0%E8%B5%B0/' style='font-size:16px; color:rgb(108, 152, 104)'>慢慢地走</a><a href='/tags/%E6%B7%87%E5%A5%A5/' style='font-size:18px; color:rgb(119, 52, 163)'>淇奥</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/08/"><span class="card-archive-list-date">八月 2020</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/03/"><span class="card-archive-list-date">三月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2019/08/"><span class="card-archive-list-date">八月 2019</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2017/03/"><span class="card-archive-list-date">三月 2017</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/05/"><span class="card-archive-list-date">五月 2016</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/03/"><span class="card-archive-list-date">三月 2016</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/02/"><span class="card-archive-list-date">二月 2016</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2016/01/"><span class="card-archive-list-date">一月 2016</span><span class="card-archive-list-count">11</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">25</div></div><div class="webinfo-item"><div class="webinfo-runtime-name">已运行时间 :</div><div class="webinfo-runtime-count" id="webinfo-runtime-count" publish_date="2/1/2018 00:00:00">     </div></div><div class="webinfo-item"><div class="webinfo-site-wordcount-name">本站总字数 :</div><div class="webinfo-site-wordcount">15.4k</div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 By Zou Chengjun</div><div class="footer_custom_text">写自己。</div></div></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "Just write yourself.".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'Just write yourself.'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}</script></div><script src="/js/third-party/click_heart.js" async="async"></script></div></body></html>
